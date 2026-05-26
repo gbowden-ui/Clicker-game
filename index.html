@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Clicker Game</h1>
+        
+        <div class="stats">
+            <div class="stat-row">
+                <span class="stat-label">💰 Score:</span>
+                <span class="stat-value" id="score">0</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">👆 Per Click:</span>
+                <span class="stat-value" id="perClick">1</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">⚡ Per Second:</span>
+                <span class="stat-value" id="perSecond">0</span>
+            </div>
+        </div>
+
+        <div class="clicker-section">
+            <button id="clickButton">CLICK ME!</button>
+            <div id="clickFeedback"></div>
+        </div>
+
+        <div class="upgrades-section">
+            <h2>🛍️ Upgrades</h2>
+            <div class="upgrades-grid">
+                <button class="upgrade-btn">
+                    <span class="upgrade-name">Better Click</span>
+                    <span class="upgrade-cost">Cost: <span>10</span></span>
+                </button>
+                <button class="upgrade-btn">
+                    <span class="upgrade-name">Auto Clicker</span>
+                    <span class="upgrade-cost">Cost: <span>50</span></span>
+                </button>
+                <button class="upgrade-btn">
+                    <span class="upgrade-name">Power Click</span>
+                    <span class="upgrade-cost">Cost: <span>100</span></span>
+                </button>
+                <button class="upgrade-btn">
+                    <span class="upgrade-name">Super Auto</span>
+                    <span class="upgrade-cost">Cost: <span>200</span></span>
+                </button>
+            </div>
+        </div>
+
+        <button class="reset-btn" id="resetButton">🔄 Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
